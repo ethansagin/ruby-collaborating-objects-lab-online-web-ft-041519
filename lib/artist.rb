@@ -23,8 +23,12 @@ class Artist
   end
   
   def save
+<<<<<<< HEAD
     @@all << self
     self
+=======
+    @@all << self 
+>>>>>>> 423f361202380e257965d582504bebd4b430eb63
     #saves artist instance to list of all artists
   end
   
@@ -33,7 +37,11 @@ class Artist
   end
     
   def self.find_or_create_by_name(name)
+<<<<<<< HEAD
     self.all.find {|artist| artist.name == name} || Artist.new(name).save
+=======
+    self.all.find {|artist| artist.name == name} || Artist.new(name)
+>>>>>>> 423f361202380e257965d582504bebd4b430eb63
   end
   
 end
